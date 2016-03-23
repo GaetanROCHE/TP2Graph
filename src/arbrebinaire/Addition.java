@@ -6,6 +6,8 @@ public class Addition extends OperateurBinaire{
 	}
 
 
-	
-
+	@Override
+	public void accept(Visitor V) {
+		V.visitAddition(this);
+	}
 }
